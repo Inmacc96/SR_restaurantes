@@ -11,12 +11,12 @@ El sistema va a tener como entrada cuatro parámetros:
 1. Precio: Tiene las categorías “Alto”, “Bajo” y “Medio”.
    Además, vendrá la información de qué tipo de comida ha consumido el cliente.
    Vamos a distinguir los siguientes tipos de comida:
-   • Tapas españolas
-   • Americana
-   • Italiana
-   • China
-   • Mexicana
-   De esta manera obtenemos un dataframe donde las variables/columnas van a ser el nombre del restaurante, las características anteriores, la localización del restaurante y el tipo de comida que ha consumido el cliente, y los casos/filas van a ser el nombre de cada uno de los clientes.
+   - Tapas españolas
+   - Americana
+   - Italiana
+   - China
+   - Mexicana
+     De esta manera obtenemos un dataframe donde las variables/columnas van a ser el nombre del restaurante, las características anteriores, la localización del restaurante y el tipo de comida que ha consumido el cliente, y los casos/filas van a ser el nombre de cada uno de los clientes.
 1. El nombre de la persona a la que le vamos a recomendar los restaurantes.
 1. Un dataframe donde contenga la información de los restaurantes a los que ha ido la persona a recomendar, en el último año, junto con el tipo de comida que ha consumido.
 1. La provincia de la persona a la que le vamos a recomendar los restaurantes.
