@@ -40,8 +40,8 @@ Para obtener esta valoración genérica del restaurante, se realizará lo siguie
 
 Una vez obtenido el dataframe anterior, vemos cuáles son los restaurantes a recomendar y para cada uno de ellos, vamos a obtener una medida de cuánto podría gustarle ese restaurante, es decir, vamos a predecir cuánto le gustaría el restaurante a la persona a recomendar si hubiese ido. Esta calificación va a venir dada por la suma de dos marcadores:
 
-    1. Suma ponderada de las valoraciones de los clientes que han ido a ese restaurante.
-    2. Un marcador que me diga cuánto le gusta a la persona a recomendar el tipo de comida que tiene ese restaurante.
+1. Suma ponderada de las valoraciones de los clientes que han ido a ese restaurante.
+2. Un marcador que me diga cuánto le gusta a la persona a recomendar el tipo de comida que tiene ese restaurante.
 
 Para el primer marcador, calcularemos la correlación de Pearson entre los clientes y ponderamos cada cliente mediante esta medida. De esta forma, las personas que opinen similares a la persona a recomendar, tendrán más peso en la suma ponderada de las valoraciones. Sin embargo, las personas que opinen muy diferente van a tener una correlación negativa, por lo que disminuirá la suma ponderada. Para que no ocurra esto, vamos a pasar la correlación a un número entre 0 y 1 y así, estas personas afectarán poco en la suma ponderada de las valoraciones, pero no la disminuirá.
 
